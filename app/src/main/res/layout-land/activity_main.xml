@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+this is the quiz activity
+-->
+
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="352dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="112dp"
+        android:text="Q1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/answer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--
+id assigned
+-->
+
+    <TextView
+        android:id="@+id/earned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="44dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/answer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/earnedtext" />
+    <!--
+id assigned
+-->
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="127dp"
+        android:gravity="center"
+        android:text="Question Here...."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/answer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <!--
+id assigned
+-->
+
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="358dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#673AB7"
+        android:onClick="CheckTheAns"
+        android:text="Answer 1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/answer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--
+id assigned
+-->
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="357dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#673AB7"
+        android:onClick="CheckTheAns"
+        android:text="Answer 2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/answer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--
+id assigned
+-->
+    <Button
+        android:id="@+id/answer3"
+        android:layout_width="353dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#673AB7"
+        android:onClick="CheckTheAns"
+        android:text="Answer 3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/answer4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--
+id assigned
+-->
+
+    <Button
+        android:id="@+id/answer4"
+        android:layout_width="349dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#673AB7"
+        android:onClick="CheckTheAns"
+        android:text="Answer 4"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--
+id assigned
+-->
+
+    <TextView
+        android:id="@+id/earnedtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="45dp"
+        android:text="You have Earned $"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/answer1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--
+id assigned
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
